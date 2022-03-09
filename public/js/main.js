@@ -24,7 +24,8 @@ const askWeather =async (location) =>{
                 console.log("Weather: "+data.weather.desc);
                 console.log("Temperature: "+data.weather.tmp+"*C");
                 console.log("Temperature feel: "+data.weather.tmp_feel+"*C");
-                message2.textContent ="Exact location: "+data.location.location+" | "+"Weather: "+data.weather.desc+" | "+"Temperature: "+data.weather.tmp+"*C"+" | "+"Temperature feel: "+data.weather.tmp_feel+"*C";
+                console.log("humidity is: "+ data.weather.humidity + "%");
+                message2.textContent ="Exact location: "+data.location.location+" | "+"Weather: "+data.weather.desc+" | "+"Temperature: "+data.weather.tmp+"*C"+" | "+"Temperature feel: "+data.weather.tmp_feel+"*C" + " | "+"Humidity is: "+ data.weather.humidity + "%";
             }
         });
     });

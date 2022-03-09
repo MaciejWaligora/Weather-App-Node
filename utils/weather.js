@@ -13,6 +13,7 @@ const req_weather =(lat, lon,callback)=>{
             desc: response.body.current.weather_descriptions[0],
             tmp: response.body.current.temperature,
             tmp_feel: response.body.current.feelslike,
+            humidity: response.body.current.humidity
             });
         }
     });
