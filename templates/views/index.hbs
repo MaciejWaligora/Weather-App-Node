@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel = "icon" href="/img/weather.svg">
+        
+        <title>{{title}}</title>
+    </head>
+    <body>
+       <div class="main-content">
+        {{>header1}}
+        <p>Location of weather forecast:</p>
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id ="message1"></p>
+        <p id ="message2"></p>
+        </div>
+       {{>footer}}
+       <script src="/js/main.js"></script>
+    </body>
+</html>
