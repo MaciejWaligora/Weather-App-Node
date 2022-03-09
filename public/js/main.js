@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit',(e)=>{
 
 const askWeather =async (location) =>{
     message1.textContent = "Loading...";
-    var weatherResponse = await fetch('http://localhost:8081/weather?address='+location).then((res)=>{
+    var weatherResponse = await fetch('/weather?address='+location).then((res)=>{
         res.json().then((data)=>{
             message1.textContent = "";
             if(data.error){
