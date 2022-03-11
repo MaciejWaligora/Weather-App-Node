@@ -4,7 +4,7 @@ const message1 = document.querySelector("#message1");
 const message2 = document.querySelector("#message2");
 
 
-
+//test
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault();
    askWeather(input.value);
